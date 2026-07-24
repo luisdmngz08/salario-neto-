@@ -1,0 +1,18 @@
+
+def calcular_area():
+    print("Calcula el área de un rectángulo")
+
+    try:
+        base = float(input("Ingresa la base del rectángulo: "))
+        altura = float(input("Ingresa la altura del rectángulo: "))
+        area = base * altura
+
+        print("\nResultados:")
+        print(f"Base ingresada: {base}")
+        print(f"Altura ingresada: {altura}")
+        print(f"El área del rectángulo es: {area}")
+
+    except ValueError:
+        print("Error: Debes ingresar únicamente números.")
+
+calcular_area()
