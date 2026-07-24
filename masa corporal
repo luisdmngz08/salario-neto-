@@ -1,0 +1,20 @@
+
+def calcular_imc():
+    print("Calcula el Índice de Masa Corporal (IMC)")
+
+    try:
+        peso = float(input("Ingresa tu peso (kg): "))
+        altura = float(input("Ingresa tu altura (m): "))
+        imc = peso / (altura ** 2)
+
+        print("\nResultados:")
+        print(f"Peso: {peso} kg")
+        print(f"Altura: {altura} m")
+        print(f"Tu IMC es: {imc:.2f}")
+
+    except ValueError:
+        print("Error: Debes ingresar únicamente números.")
+    except ZeroDivisionError:
+        print("Error: La altura no puede ser cero.")
+
+calcular_imc()
