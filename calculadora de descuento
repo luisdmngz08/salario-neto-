@@ -1,0 +1,27 @@
+
+def calcular_descuento():
+    print("Calculadora de descuento")
+
+    try:
+        precio = float(input("Ingresa el precio: "))
+
+        if precio <= 100:
+            descuento = 5
+        elif precio <= 200:
+            descuento = 10
+        elif precio <= 500:
+            descuento = 15
+        else:
+            descuento = 20
+
+        total = precio - (precio * descuento / 100)
+
+        print("\nResultados:")
+        print(f"Precio original: ${precio}")
+        print(f"Descuento: {descuento}%")
+        print(f"Precio final: ${total:.2f}")
+
+    except ValueError:
+        print("Error: Ingresa un número.")
+
+calcular_descuento()
