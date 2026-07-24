@@ -1,0 +1,37 @@
+
+def convertir_moneda():
+    print("Conversor de monedas")
+
+    try:
+        pesos = float(input("Ingresa la cantidad en pesos mexicanos: "))
+
+        moneda = input("USD, EUR, THB, JPY, KRW, AUD, PEN, CAD, VES o ARS: ").upper()
+
+        match moneda:
+            case "USD":
+                print(f"{pesos/18:.2f} USD")
+            case "EUR":
+                print(f"{pesos/20:.2f} EUR")
+            case "THB":
+                print(f"{pesos*1.8:.2f} THB")
+            case "JPY":
+                print(f"{pesos*8:.2f} JPY")
+            case "KRW":
+                print(f"{pesos*75:.2f} KRW")
+            case "AUD":
+                print(f"{pesos/12:.2f} AUD")
+            case "PEN":
+                print(f"{pesos/5:.2f} PEN")
+            case "CAD":
+                print(f"{pesos/13:.5f} CAD")
+            case "VES":
+                print(f"{pesos*2.5:.2f} VES")
+            case "ARS":
+                print(f"{pesos*70:.2f} ARS")
+            case _:
+                print("Moneda no válida.")
+
+    except ValueError:
+        print("Error: Ingresa un número.")
+
+convertir_moneda()
