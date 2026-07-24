@@ -1,0 +1,26 @@
+
+def evaluar_calificacion():
+    print("Evaluación de calificaciones")
+
+    try:
+        calificacion = float(input("Ingresa la calificación: "))
+
+        if calificacion >= 90:
+            letra = "A"
+        elif calificacion >= 80:
+            letra = "B"
+        elif calificacion >= 70:
+            letra = "C"
+        elif calificacion >= 60:
+            letra = "D"
+        else:
+            letra = "F"
+
+        print("\nResultados:")
+        print(f"Calificación: {calificacion}")
+        print(f"Letra obtenida: {letra}")
+
+    except ValueError:
+        print("Error: Ingresa un número.")
+
+evaluar_calificacion()
