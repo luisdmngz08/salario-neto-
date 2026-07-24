@@ -1,0 +1,17 @@
+
+def calcular_calificacion():
+    print("Calculadora de calificación final")
+
+    try:
+       
+        parciales = float(input("Ingresa el promedio de parciales: "))
+        proyecto = float(input("Ingresa la calificación del proyecto: "))
+        examen = float(input("Ingresa la calificación del examen: "))
+
+       final = (parciales * 0.40) + (proyecto * 0.30) + (examen * 0.30)
+
+        print("\nResultados:")
+        print(f"Parciales: {parciales}")
+        print(f"Proyecto: {proyecto}")
+        print(f"Examen: {examen}")
+        print(f"Calificación final: {final:.2f}")
