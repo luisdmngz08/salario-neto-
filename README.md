@@ -1,2 +1,0 @@
-# salario-neto-
-salario neto 

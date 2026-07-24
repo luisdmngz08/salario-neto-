@@ -1,0 +1,22 @@
+
+def calcular_salario_neto():
+    print("Calcula el salario neto")
+
+    try:
+        salario_bruto = float(input("Ingresa el salario bruto: "))
+        porcentaje_impuestos = float(input("Ingresa el porcentaje de impuestos: "))
+        deducciones = float(input("Ingresa las deducciones: "))
+        impuestos = salario_bruto * (porcentaje_impuestos / 100)
+
+        salario_neto = salario_bruto - impuestos - deducciones
+
+        print("\nResultados:")
+        print(f"Salario bruto: ${salario_bruto}")
+        print(f"Impuestos: ${impuestos}")
+        print(f"Deducciones: ${deducciones}")
+        print(f"Salario neto: ${salario_neto}")
+
+    except ValueError:
+        print("Error: Debes ingresar únicamente números.")
+
+calcular_salario_neto()
