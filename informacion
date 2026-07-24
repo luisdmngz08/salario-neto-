@@ -1,0 +1,26 @@
+
+def informacion():
+    print("Información de artistas, películas y series")
+
+    opcion = input("Escribe un nombre: ").lower()
+
+    match opcion:
+        case "shakira":
+            print("Shakira es una cantante colombiana.")
+
+        case "bad bunny":
+            print("Bad Bunny es un cantante puertorriqueño.")
+
+        case "avatar":
+            print("Avatar es una película de ciencia ficción.")
+
+        case "harry potter":
+            print("Harry Potter es una saga de películas y libros.")
+
+        case "stranger things":
+            print("Stranger Things es una serie de Netflix.")
+
+        case _:
+            print("No hay información disponible.")
+
+informacion()
