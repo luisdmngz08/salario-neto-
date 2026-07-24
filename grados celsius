@@ -1,0 +1,25 @@
+
+def convertir():
+    print("Conversión de temperatura")
+
+    try:
+        celsius = float(input("Ingresa los grados Celsius: "))
+
+        opcion = input("Convertir a (Fahrenheit/Kelvin): ").lower()
+
+        match opcion:
+            case "fahrenheit":
+                resultado = (celsius * 9 / 5) + 32
+                print(f"Resultado: {resultado:.2f} °F")
+
+            case "kelvin":
+                resultado = celsius + 273.15
+                print(f"Resultado: {resultado:.2f} K")
+
+            case _:
+                print("Opción no válida.")
+
+    except ValueError:
+        print("Error: Ingresa un número.")
+
+convertir()
