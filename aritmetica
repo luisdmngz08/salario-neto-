@@ -1,0 +1,21 @@
+
+def secuencia():
+
+    inicio = int(input("Inicio: "))
+    diferencia = int(input("Diferencia: "))
+    cantidad = int(input("Cantidad de términos: "))
+
+    contador = 0
+    termino = inicio
+
+    while True:
+
+        print(termino)
+
+        termino += diferencia
+        contador += 1
+
+        if contador == cantidad:
+            break
+
+secuencia()
