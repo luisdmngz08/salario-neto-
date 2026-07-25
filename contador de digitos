@@ -1,0 +1,9 @@
+
+def contar_digitos():
+    print("Contador de dígitos")
+
+    numero = input("Ingresa un número: ")
+
+    print(f"El número tiene {len(numero)} dígitos.")
+
+contar_digitos()
