@@ -1,0 +1,20 @@
+
+def contar():
+    print("Contador de vocales y consonantes")
+
+    texto = input("Escribe un texto y termina con un espacio: ")
+
+    vocales = 0
+    consonantes = 0
+
+    for letra in texto.lower():
+        if letra in "aeiou":
+            vocales += 1
+        elif letra.isalpha():
+            consonantes += 1
+
+    print("\nResultados:")
+    print(f"Vocales: {vocales}")
+    print(f"Consonantes: {consonantes}")
+
+contar()
