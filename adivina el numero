@@ -1,0 +1,20 @@
+
+import random
+
+def adivinar():
+    print("Adivina el número")
+
+    secreto = random.randint(1,100)
+
+    while True:
+        numero = int(input("Ingresa un número entre 1 y 100: "))
+
+        if numero == secreto:
+            print("¡Correcto!")
+            break
+        elif numero < secreto:
+            print("Muy pequeño.")
+        else:
+            print("Muy grande.")
+
+adivinar()
