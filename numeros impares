@@ -1,0 +1,19 @@
+
+def impares():
+
+    contador = 0
+    numero = 1
+
+    while True:
+
+        if numero % 2 != 0:
+            contador += 1
+
+        numero += 1
+
+        if numero > 100:
+            break
+
+    print(f"Hay {contador} números impares del 1 al 100.")
+
+impares()
